@@ -6,6 +6,7 @@ import { RiDiscountPercentFill } from "react-icons/ri";
 import { IoMdHelpBuoy } from "react-icons/io";
 import { CiUser } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
+
 const Header = () => {
     const[modal,setModal]=useState(false);
 
@@ -78,7 +79,7 @@ const Header = () => {
         <div className='flex items-center  text-[18px] font-semibold text-slate-700 gap-x-16'>
             {
                 navs.map((nav,index)=>{
-                    return <li className='list-none hover:text-orange-500 duration-300 cursor-pointer flex gap-x-2 items-center'>
+                    return <li className='list-none hover:text-orange-500 duration-300 cursor-pointer flex gap-x-2 items-center' key={nav}>
                         {nav.logo}
                         {nav.name}
                         <sup className='text-orange-500'>{nav.sup}</sup>
