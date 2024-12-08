@@ -64,8 +64,8 @@ const Header = () => {
         </div>
 
     </div>
-    <navbar className='shadow-xl'>
-    <div className='max-w-[1400px] mx-auto flex items-center justify-between'>
+    <header className='shadow-xl'>
+    <div className='max-w-[1400px] mx-auto flex items-center justify-between '>
         <div className='flex items-center gap-x-12'>
         <div className='w-[100px]'>
            <img src="assests/logo.png " className='w-full hover:scale-110 ease-out duration-500' alt="" />
@@ -79,7 +79,7 @@ const Header = () => {
         <div className='flex items-center  text-[18px] font-semibold text-slate-700 gap-x-16'>
             {
                 navs.map((nav,index)=>{
-                    return <li className='list-none hover:text-orange-500 duration-300 cursor-pointer flex gap-x-2 items-center' key={nav}>
+                    return <li className='list-none hover:text-orange-500 duration-300 cursor-pointer flex gap-x-2 items-center' key={index}>
                         {nav.logo}
                         {nav.name}
                         <sup className='text-orange-500'>{nav.sup}</sup>
@@ -89,7 +89,7 @@ const Header = () => {
         
     </div>
     </div>
-    </navbar>
+    </header>
     </>
   )
 }
