@@ -64,10 +64,10 @@ const Header = () => {
         </div>
 
     </div>
-    <header className='shadow-xl'>
+    <header className='shadow-xl overflow-hidden'>
     <div className='max-w-[1400px] mx-auto flex items-center justify-between '>
         <div className='flex items-center gap-x-12'>
-        <div className='w-[100px]'>
+        <div className='w-[90px]'>
            <img src="assests/logo.png " className='w-full hover:scale-110 ease-out duration-500' alt="" />
         </div>
         <div className='gap-x-2 flex items-center '>
